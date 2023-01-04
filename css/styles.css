@@ -1,16 +1,20 @@
 *{
-margin: 0px;
-padding: 0px;
-font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(216, 225, 230);
+    scroll-behavior: smooth;
 }
+
 .container{
-    width: 100%;
-    min-height: 100vh;
-    padding-left: 8%;
-    padding-right: 8%;
-    box-sizing: border-box;
-    overflow: hidden;
-}
+        width: 100%;
+        min-height: 100vh;
+        /* padding-left: 8%;
+        padding-right: 8%; */
+        box-sizing: border-box;
+        overflow: hidden;
+        align-items: center;
+    }
 .navbar{
     width: 100%;
     display:flex;
@@ -18,6 +22,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 .logo{
     width: 50px;
+    height: 50px;
     cursor:pointer;
     margin: 30px 0; 
     border-radius: 10px;
@@ -30,7 +35,7 @@ font-family: Arial, Helvetica, sans-serif;
 nav{
     flex: 1;
     text-align: right;
-    background:linear-gradient(#cd2317, #000000);
+    background:white;
     border-radius: 12px;
 }
 nav ul li{
@@ -148,7 +153,8 @@ button:hover{
 @media only screen and (max-width:700px){
     nav uk{
         width:100%;
-        background: linear-gradient(rgb(0, 0, 0) , rgb(211, 7, 7));
+        /* background: linear-gradient(rgb(0, 0, 0) , rgb(211, 7, 7)); */
+        background-color:white; 
         position: absolute;
         top: 75px;
         right:0;
@@ -160,13 +166,114 @@ button:hover{
         margin-bottom: 10px;
     }
     nav ul li a{
-        color: #cecece
+        color: #000000
     }
     .menu-icon{
         display:block;
     }
     #menulist{
         overflow: hidden;
-        transition: 0.5;
+        transition: 1s;
     }
+    .titles{
+        display:flex-box;
+    }
+}
+
+.services{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.column1{
+    margin-left:   0px;
+    margin-top: 10px;
+    margin-right:150px;
+    background-color: rgba(6, 105, 253, 0);
+    padding: 30px 60px;
+    border-radius: 20px ;
+    align-content: center;
+    text-align: center; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: black;
+    
+
+}
+.column2{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right:150px;
+    background-color: rgba(6, 105, 253, 0);
+    padding: 30px 38px;
+    border-radius: 20px ;
+    align-content: center;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.column3{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right:150px;
+    background-color: rgba(6, 105, 253, 0);
+    padding: 30px 40px;
+    border-radius: 20px ;
+    align-content: center;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+h2{
+    background-color:inherit;
+    font-size: 40px;
+}
+.titles{
+    display: flex;
+    align-content: center;
+    margin:0px;
+    margin-right: 10px;
+    margin-left:100px;
+}
+.basic{
+    background-color: rgba(255, 0, 0, 0);
+    margin-bottom: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.advanced{
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.premium{
+    background-color: rgba(255, 0, 0, 0);
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li{
+    background-color:inherit;
+    margin-top:20px;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.basic{
+    border-radius: 12px;
+}
+
+body{
+    background: linear-gradient(#cc0606, #350000);
+}
+input{
+    text-decoration: none;
+    border-radius:5px ;
+}
+.Request-form{
+    background-color: blue;
+    padding:12px;
+    margin-right:70%;
+    align-content: center;
+}
+input :hover{
+    border-radius: 0px;
 }
