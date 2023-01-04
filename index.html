@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedits</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+     <div class="navbar">
+        <img src="img/Editing Logo.jpg" alt="Editing Logo.jpg" class="logo">
+        <nav>
+            <ul id="menulist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Plans</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="img/Bar.png" alt="Bar.png" class="menu-icon" onclick="togglemenu()">
+     </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>My Work<br>Basic Plan</h2>
+                <h3>High Definition</h3>
+                <p>(Non-Subbed)</p>
+                <h4>₦5,000</h4>
+                <button type="button">Edit Now! <img src="img/Arrow.png" alt="Arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="img/Editpic.jpeg" alt="Editpic.jpeg" class="Editpic"height="250" width="200">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="img/Add.png" height="64" width="64" class="add">
+                    <p><small>Add To Cart</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="img/Youtube.png" alt="">
+            <img src="img/Twitter.png" alt="">
+        </div>
+    </div>
+    <script>
+        var menulist = document.getElementById("menulist")
+        menulist.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menulist.style.maxHeight == "0px"){
+                menulist.style.maxHeight = "130px";
+            }
+            else{
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
