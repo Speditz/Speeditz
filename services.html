@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
+    <!-- <div class="container"> -->
      <div class="navbar">
         <a href="index.html"><img src="img/Editing Logo.jpg" alt="Editing Logo.jpg" class="logo"></a>
         <nav>
@@ -23,22 +23,66 @@
         </nav>
         <img src="img/Bar.png" alt="Bar.png" class="menu-icon" onclick="togglemenu()">
      </div>
-    <div class="services">
-        Some of the services we offer are as follows:<br>
-            <li>Video Editing<br>
-            <li>Audio Enhancing<br>
-            <li>Thumbnail Making<br>
-            <li>
     </div>
+
+     <!-- Image slider start -->
+            <div class="slider">
+                <div class="slides">
+                    <!-- radio buttons start -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <!-- radio buttons stop -->
+                    <!-- slide images start -->
+                    <div class="slide first">
+                        <img src="img/imgs1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/imgs2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/imgs3.png" alt="">
+                    </div>
+                    <!-- slide images stop -->
+                    <!--automatic navigation start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                    <!--automatic navigation stop-->
+                </div>
+                <!--manul naviation start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+                <!--manul naviation stop-->
+            </div>
+     <!-- Image slider stop -->
+
+     <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked=true;
+            counter++
+            if(counter > 3){
+                counter=1;
+            }
+        },5000);
+
+    
+    </script>
 
      <footer>
         <div class="social-links">
-            <a href="https://www.youtube.com/@Speeditz/featured"><img src="img/Youtube.png" alt=""></a>
+            <img src="img/Youtube.png" alt="">
             <img src="img/Twitter.png" alt="">
         </div>
         </footer>
 
-    </div>
+    
     <script>
         var menulist = document.getElementById("menulist")
         menulist.style.maxHeight = "0px";

@@ -14,7 +14,8 @@
         box-sizing: border-box;
         overflow: hidden;
         align-items: center;
-    }
+        
+}
 .navbar{
     width: 100%;
     display:flex;
@@ -261,9 +262,9 @@ li{
     border-radius: 12px;
 }
 
-body{
+/* body{
     background: linear-gradient(#cc0606, #350000);
-}
+} */
 
 .containeri{
     position: relative;
@@ -375,3 +376,99 @@ body{
 form{
     background-color: rgba(255, 0, 0, 0)       ;
 }
+
+/* Slide show start */
+
+.slider{
+    width:800px;
+    height:500px;
+    border-radius:20px;
+    overflow: hidden;
+    margin: 20%;
+    padding-top: 10px;
+    margin-top: 0px;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+        width: 20%;
+        transition: 2s;
+
+}
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+/* css for manual navigation */
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    background-color:rgba(255, 0, 0, 0) ;
+}
+.manual-btn{
+    border: 2px solid rgb(255, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    background: rgba(0, 0, 0, 0);
+
+}
+.manual-btn:not(:last-child){
+    margin-right:30px;
+}
+.manual-btn:hover{
+    background: red;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+/* css for automatic navigation */
+
+.navigation-auto{
+    position: absolute;
+    display:flex;
+    width: 800px;
+    justify-content: center;
+    margin-top:460;
+}
+.navigation-auto div{
+    /* border: 2px solid red; */
+    padding:5px;
+    border-radius:10px;
+    transition: 1s;
+    
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    /* background: red; */
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    /* background: red; */
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    /* background: red; */
+}
+
+
+
+/* Slide show stop */
